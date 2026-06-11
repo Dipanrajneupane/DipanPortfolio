@@ -1,0 +1,379 @@
+*{
+    margin: 0; padding: 0;
+    font-family: Assistant, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    background-color: #051e23;
+    
+}
+
+
+/* Header Part */
+
+header{
+    display: flex;
+  
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    /* border-bottom: 6px solid rgba(21, 18, 62, 0.455); */
+    letter-spacing: 2px;
+    background-color: #0a1325;
+  
+}
+
+
+
+.nav_bar{
+    /* font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 600px;*/
+
+
+    font-size: 20px;
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    min-width: 600px;
+    align-items: center;
+   gap: 30px;
+   margin-right: 90px;
+
+}
+
+.logo_container{
+    /* flex: 1; */
+    margin-left: 10px;
+}
+
+.logo{
+   height: 35px;
+   width: 150px;
+  
+
+/* position: absolute;
+    left:40px;
+    top:10px; */
+    
+   
+}
+
+.nav_bar a{
+    text-decoration: none;
+  color: rgb(210, 205, 205);
+  margin: 10px;
+  padding: 7px;
+  align-items: center;   
+  justify-content: space-around;
+ 
+}
+
+
+.nav_bar #projects{
+     color: rgb(41, 79, 135);
+    border-bottom: 4px solid rgb(41, 79, 135);
+    height: 35px;
+    width: 85px;
+    /* background-color: #3c2a2a; */
+        border-radius: 15px;
+    transition: 0.5s;
+}
+
+
+.nav_bar #home:hover{
+    color: rgb(41, 79, 135);
+    border-bottom: 4px solid rgb(41, 79, 135);
+    height: 35px;
+    width: 60px;
+    /* background-color: #3c2a2a; */
+        border-radius: 15px;
+    transition: 0.5s;
+    
+}
+
+.nav_bar #about:hover{
+     color: rgb(41, 79, 135);
+    border-bottom: 4px solid rgb(41, 79, 135);
+    height: 35px;
+    width: 65px;
+    /* background-color: #3c2a2a; */
+        border-radius: 15px;
+    transition: 0.5s;
+}
+
+.nav_bar #projects:hover{
+     color: rgb(41, 79, 135);
+    border-bottom: 4px solid rgb(41, 79, 135);
+    height: 35px;
+    width: 83px;
+    /* background-color: #3c2a2a; */
+        border-radius: 15px;
+    transition: 0.5s;
+
+
+}
+
+
+.nav_bar #contact:hover{
+     color: rgb(41, 79, 135);
+    border-bottom: 4px solid rgb(41, 79, 135);
+    height: 35px;
+    width: 85px;
+    /* background-color: #3c2a2a; */
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.nav_bar #home:active{
+   color: rgba(41, 79, 135, 0.597);
+transition: 0s;
+}
+
+.nav_bar #about:active{
+   color: rgba(41, 79, 135, 0.597);
+transition: 0s;
+}
+
+.nav_bar #projects:active{
+ color: rgba(41, 79, 135, 0.597);
+transition: 0s;
+}
+
+.nav_bar #contact:active{
+ color: rgba(41, 79, 135, 0.597);
+transition: 0s;
+}
+
+
+
+/* Main Part */
+
+
+main{
+    color: white;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+main .ul1{
+        content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background:  rgb(41, 79, 135);
+    left: 0;
+    right: 0;
+    bottom: 600px;
+    margin: auto;
+}
+
+/* main .box2{
+    background: transparent;
+    border-radius: 30px;
+    border: 2px solid #0a1325;
+    backdrop-filter: blur(20px);
+    width: 30%;
+    height: 350px;
+    padding: 30px 40px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column; 
+    float: right;
+    margin-right: 30%;
+    justify-content: center;
+    box-shadow: 0 0 30px  #0a1325, 0 0 20px #0b1529c1 ;
+
+} */
+
+
+
+
+main .box2{
+    display: flex;
+    line-height: 5rem;
+}
+
+main #headphone{
+    width: 20%;
+    height: 20%;
+}
+main #burger{
+    width: 17%;
+    height: 250px;
+}
+main #uiux1{
+    width: 22%;
+    height: 22%;
+}
+main #rentalweb{
+    width: 350px;
+    height: 200px;
+}
+
+main .cloumn1{
+    line-height: 2.5;
+}
+ main .graphics{
+    display: flex;
+    gap: 20px;
+    
+ }
+ main .colum1 h3{
+    color:  rgb(41, 79, 135);
+    font-size: 28px;
+
+ }
+
+
+main #rentalweb:hover{
+    width: 400px;
+    height: 250px;
+    transition: 0.5s;
+    box-shadow: 0 0 30px  rgb(41, 79, 135);
+    
+}
+
+main #burger:hover{
+    width: 19%;
+    height: 300px;
+    transition: 0.5s;
+    box-shadow: 0 0 30px  rgb(41, 79, 135);
+}
+
+main #headphone:hover{
+    width: 23%;
+    height: 23%;
+    transition: 0.5s;
+    box-shadow: 0 0 30px  rgb(41, 79, 135);
+}
+
+main #uiux1:hover{
+    width: 26%;
+    height: 26%;
+    transition: 0.5s;
+   box-shadow: 0 0 30px  rgb(41, 79, 135);
+}
+
+
+  .full-image {
+      display: none;
+      margin-top: 20px;
+      max-width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Part */
+
+footer{
+    background-color: #0a1325;
+    /* display: flex; */
+    flex-direction: row;
+    color: white;
+    padding: 10px;
+}
+
+.footer_container{
+    display: flex;
+    flex-direction: row;
+justify-content: space-evenly;
+margin: 20px;
+   
+}
+footer .footer_container .cloumn1 , .cloumn2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-decoration: none;
+    color: rgb(210, 205, 205);
+}
+footer .footer_container .cloumn1 a, .cloumn2 a{
+    text-decoration: none;
+    color: rgb(210, 205, 205);
+    /* transition: 0.3s; */
+}
+footer .footer_container .cloumn1 a:hover, footer .footer_container .cloumn2 a:hover{
+    color: rgb(41, 79, 135);
+    transition: 0.3s;
+}
+
+.cloumn1 h3::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: rgb(41, 79, 135);
+    
+}
+ .cloumn2 h3::after{
+    content: "";
+    display: block;
+    width: 45px;
+    height: 2px;
+    background: rgb(41, 79, 135);
+ }
+ .cloumn3 h3::after{
+    content: "";
+    display: block;
+    width: 65px;
+    height: 2px;
+    background: rgb(41, 79, 135);
+ }
+ .copyright{
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+ }
+ footer .copyright{
+    display: flex;
+    justify-content: space-between;
+ }
+ .material-symbols-outlined{
+    font-size: 18px;
+    color: rgb(41, 79, 135);
+    margin-right: 5px;
+   gap: 10px;
+}
+
+   footer .footer_container .cloumn3{
+    display: row;
+    flex-direction: colomn;
+    gap: 10px;
+    text-decoration: none;
+    color: rgb(210, 205, 205);
+   }
+
+.contant{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+.social_media{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
