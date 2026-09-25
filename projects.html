@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dipan's Projects</title>
-     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
         
@@ -15,7 +16,19 @@
 <a href="index.html"> <img class="logo" src="images/dipan white.png" alt="logo"> </a>
 </div>
   
-<nav class="nav_bar">
+  <!-- MOBILE MENU BUTTON -->
+
+    <button
+        class="menu_btn"
+        id="menuBtn"
+        aria-label="Open Menu"
+        aria-expanded="false">
+
+        <i class="fa-solid fa-bars-staggered"></i>
+
+    </button>
+
+<nav class="nav_bar" id="navBar">
  
     <a id="home" href="index.html">Home</a>
     <a id="about" href="about.html">About</a>
@@ -49,7 +62,7 @@
  <h3>UI/UX</h3>
 <div class="uiux">
  
-  <img src="images/sajilo online.png" alt="sajilo_online" id="uiux1">
+  <img src="/images/sajilo online.png" alt="sajilo_online" id="uiux1">
  
 </div>
 
@@ -57,7 +70,7 @@
   <div class="graphics">
   <img src="images/dipan headphone.png" alt="headphone" id="headphone">
 
-  <img src="images/Burger menu.png" alt="menu" id="burger">
+  <img src="/images/Burger menu.png" alt="menu" id="burger">
 
 </div>
 
@@ -72,7 +85,7 @@
 
 
 
-</main> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</main>
 
 
 
@@ -141,13 +154,7 @@ location_on</span> -->
 
 
   <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
- <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['<i>Lumbini ICT</i> Campus',' Second Semester'],
-      typeSpeed: 100,
-    });
-  </script>
+  <script src="js/projects.js"></script>
  <script src="https://kit.fontawesome.com/041e9d6e9a.js" crossorigin="anonymous"></script>
    
 

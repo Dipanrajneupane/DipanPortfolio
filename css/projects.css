@@ -14,7 +14,6 @@ body{
 
 header{
     display: flex;
-  
     justify-content: space-between;
     align-items: center;
     height: 80px;
@@ -27,12 +26,6 @@ header{
 
 
 .nav_bar{
-    /* font-size: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    min-width: 600px;*/
-
 
     font-size: 20px;
     display: flex;
@@ -55,10 +48,6 @@ header{
    width: 150px;
   
 
-/* position: absolute;
-    left:40px;
-    top:10px; */
-    
    
 }
 
@@ -157,6 +146,7 @@ main{
     color: white;
     margin-left: 9%;
     margin-right: 9%;
+    /* margin-top: 200px; */
 }
 
 main .ul1{
@@ -172,23 +162,9 @@ main .ul1{
     margin: auto;
 }
 
-/* main .box2{
-    background: transparent;
-    border-radius: 30px;
-    border: 2px solid #0a1325;
-    backdrop-filter: blur(20px);
-    width: 30%;
-    height: 350px;
-    padding: 30px 40px;
-    line-height: 1.5;
-    display: flex;
-    flex-direction: column; 
-    float: right;
-    margin-right: 30%;
-    justify-content: center;
-    box-shadow: 0 0 30px  #0a1325, 0 0 20px #0b1529c1 ;
-
-} */
+main {
+    padding-bottom: 350px;
+}
 
 
 
@@ -266,23 +242,6 @@ main #uiux1:hover{
       max-width: 100%;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer Part */
 
 footer{
@@ -291,6 +250,8 @@ footer{
     flex-direction: row;
     color: white;
     padding: 10px;
+  
+    
 }
 
 .footer_container{
@@ -376,4 +337,1102 @@ footer .footer_container .cloumn1 a:hover, footer .footer_container .cloumn2 a:h
     gap: 10px;
     align-items: center;
 
+}
+
+
+/* =========================================================
+   FINAL RESPONSIVE ADD-ON
+   DO NOT DELETE OR CHANGE YOUR OLD CSS
+   Add this code at the VERY BOTTOM of your CSS
+   ========================================================= */
+
+
+/* ---------- Full Page Width Fix ---------- */
+
+
+
+html {
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER - FULL WIDTH
+   ========================================================= */
+
+header {
+    width: 100% !important;
+    max-width: none !important;
+    box-sizing: border-box;
+    margin: 0 !important;
+    left: 0;
+    right: 0;
+}
+
+
+/* Keep header content inside the screen */
+
+header > * {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN
+   ========================================================= */
+
+main {
+    width: 82%;
+    max-width: 1200px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ALL PROJECT IMAGES - SAME SIZE
+   ========================================================= */
+
+main .graphics {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+/*
+   Fixed image box.
+   object-fit: contain keeps the complete image visible.
+*/
+
+main .graphics img,
+main #headphone,
+main #burger,
+main #uiux1,
+main #rentalweb {
+    width: 280px !important;
+    height: 200px !important;
+    max-width: 280px !important;
+    max-height: 200px !important;
+    object-fit: contain !important;
+    display: block;
+    flex: 0 0 280px;
+}
+
+
+/* Image hover */
+
+main .graphics img:hover,
+main #headphone:hover,
+main #burger:hover,
+main #uiux1:hover,
+main #rentalweb:hover {
+    width: 280px !important;
+    height: 200px !important;
+    max-width: 280px !important;
+    max-height: 200px !important;
+    object-fit: contain !important;
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+
+/* =========================================================
+   FOOTER - FULL WIDTH
+   ========================================================= */
+
+footer {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+    background-color: #0a1325;
+}
+
+
+.footer_container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HAMBURGER MENU BUTTON
+   ========================================================= */
+
+.menu_button {
+    display: none;
+    width: 45px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 7px;
+    position: relative;
+    z-index: 1001;
+}
+
+
+.menu_button span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width: 900px) {
+
+    header {
+        width: 100% !important;
+        padding: 15px 20px;
+    }
+
+
+    main {
+        width: 90%;
+        max-width: 100%;
+    }
+
+
+    main .graphics {
+        gap: 25px;
+    }
+
+
+    main .graphics img,
+    main #headphone,
+    main #burger,
+    main #uiux1,
+    main #rentalweb {
+        width: 260px !important;
+        height: 190px !important;
+        max-width: 260px !important;
+        max-height: 190px !important;
+        flex: 0 0 260px;
+    }
+
+
+    main .graphics img:hover,
+    main #headphone:hover,
+    main #burger:hover,
+    main #uiux1:hover,
+    main #rentalweb:hover {
+        width: 260px !important;
+        height: 190px !important;
+        max-width: 260px !important;
+        max-height: 190px !important;
+        transform: scale(1.04);
+    }
+
+
+    .footer_container {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+
+    /* ---------- Header ---------- */
+
+    header {
+        width: 100% !important;
+        min-height: 70px;
+        padding: 12px 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    /* ---------- Logo ---------- */
+
+    .logo_container {
+        width: auto;
+        margin-left: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+
+    .logo {
+        width: 150px;
+        height: 35px;
+        object-fit: contain;
+    }
+
+
+    /* ---------- Menu Button ---------- */
+
+    .menu_button {
+        display: block;
+        flex-shrink: 0;
+    }
+
+
+    /* ---------- Navigation ---------- */
+
+    .nav_bar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        margin: 0 !important;
+        padding: 15px 0;
+        background-color: #051e23;
+        box-sizing: border-box;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 1000;
+    }
+
+
+    /* JavaScript adds this class */
+
+    .nav_bar.active {
+        display: flex;
+    }
+
+
+    .nav_bar a {
+        width: 90%;
+        text-align: center;
+        font-size: 15px;
+        margin: 4px 0 !important;
+        padding: 10px 8px;
+        box-sizing: border-box;
+    }
+
+
+    /* ---------- Main ---------- */
+
+    main {
+        width: 92%;
+        max-width: 100%;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-bottom: 80px;
+    }
+
+
+    /* ---------- Graphics ---------- */
+
+    main .graphics {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+
+    /*
+       Images stay in the same 280 x 200 box.
+       Smaller screens only reduce the box if necessary.
+    */
+
+    main .graphics img,
+    main #headphone,
+    main #burger,
+    main #uiux1,
+    main #rentalweb {
+        width: 280px !important;
+        height: 200px !important;
+        max-width: calc(100vw - 40px) !important;
+        max-height: 200px !important;
+        object-fit: contain !important;
+        flex: 0 0 auto;
+    }
+
+
+    main .graphics img:hover,
+    main #headphone:hover,
+    main #burger:hover,
+    main #uiux1:hover,
+    main #rentalweb:hover {
+        width: 280px !important;
+        height: 200px !important;
+        max-width: calc(100vw - 40px) !important;
+        transform: scale(1.03);
+    }
+
+
+    /* ---------- Footer ---------- */
+
+    footer {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 25px 15px;
+        box-sizing: border-box;
+    }
+
+
+    .footer_container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+
+    footer .footer_container .cloumn1,
+    footer .footer_container .cloumn2,
+    footer .footer_container .cloumn3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .contant {
+        justify-content: center;
+    }
+
+
+    .social_media {
+        justify-content: center;
+    }
+
+
+    footer .copyright {
+        width: 100%;
+        margin: 20px 0 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 380px) {
+
+    header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+
+    .logo {
+        width: 135px;
+    }
+
+
+    .nav_bar {
+        top: 65px;
+    }
+
+
+    main {
+        width: 94%;
+    }
+
+
+    main .graphics img,
+    main #headphone,
+    main #burger,
+    main #uiux1,
+    main #rentalweb {
+        width: 250px !important;
+        height: 180px !important;
+        max-width: calc(100vw - 30px) !important;
+        max-height: 180px !important;
+        flex: 0 0 auto;
+    }
+
+
+    main .graphics img:hover,
+    main #headphone:hover,
+    main #burger:hover,
+    main #uiux1:hover,
+    main #rentalweb:hover {
+        width: 250px !important;
+        height: 180px !important;
+        max-width: calc(100vw - 30px) !important;
+        max-height: 180px !important;
+    }
+    
+}
+
+/* =========================================================
+   WORKING RESPONSIVE MENU
+   ADD AT THE VERY BOTTOM OF YOUR CSS
+   ========================================================= */
+
+
+/* Desktop - menu button hidden */
+
+.menu_btn {
+    display: none;
+    background: transparent;
+    border: none;
+    color: rgb(210, 205, 205);
+    font-size: 28px;
+    cursor: pointer;
+    padding: 8px 12px;
+    margin-right: 10px;
+    z-index: 1001;
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        position: relative;
+        width: 100%;
+        height: 70px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+
+    /* Logo */
+
+    .logo_container {
+        margin-left: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .logo {
+        width: 130px;
+        height: auto;
+    }
+
+
+    /* Show menu button */
+
+    .menu_btn {
+        display: block;
+        margin-left: auto;
+    }
+
+
+    /* Navigation closed */
+
+    .nav_bar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        min-width: 0;
+
+        margin: 0;
+        padding: 15px 20px 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+
+        gap: 5px;
+
+        background-color: #0a1325;
+
+        transform: translateY(-120%);
+        opacity: 0;
+        visibility: hidden;
+
+        transition:
+            transform 0.35s ease,
+            opacity 0.35s ease,
+            visibility 0.35s ease;
+
+        z-index: 1000;
+
+        box-sizing: border-box;
+    }
+
+
+    /* Navigation OPEN */
+
+    .nav_bar.show {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    /* Navigation links */
+
+    .nav_bar a {
+        width: auto;
+        min-width: 100px;
+
+        text-align: center;
+
+        margin: 5px 0;
+        padding: 8px 15px;
+
+        color: rgb(210, 205, 205);
+
+        box-sizing: border-box;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        height: 65px;
+        width: 100%;
+    }
+
+
+    .logo {
+        width: 115px;
+    }
+
+
+    .menu_btn {
+        display: block;
+        font-size: 25px;
+        margin-right: 5px;
+    }
+
+
+    .nav_bar {
+        top: 65px;
+        width: 100%;
+        padding: 12px 15px 18px;
+    }
+
+
+    .nav_bar a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 360px) {
+
+    header {
+        height: 60px;
+    }
+
+
+    .logo {
+        width: 105px;
+    }
+
+
+    .menu_btn {
+        font-size: 23px;
+    }
+
+
+    .nav_bar {
+        top: 60px;
+    }
+
+}
+
+/* =========================================================
+   FINAL MOBILE NAVBAR FIX
+   Only changes the opened mobile menu
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* -----------------------------------------------------
+       HEADER
+       ----------------------------------------------------- */
+
+    header {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE NAVBAR
+       Same width as header / screen
+       ----------------------------------------------------- */
+
+    .nav_bar {
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+        right: 0;
+
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        padding: 20px 20px 25px !important;
+
+        box-sizing: border-box;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        /*
+           Space BETWEEN navigation items
+        */
+        gap: 12px !important;
+
+        background-color: #0a1325;
+
+        z-index: 1000;
+
+        /*
+           Closed menu
+        */
+        transform: translateY(-120%);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transition:
+            transform 0.35s ease,
+            opacity 0.35s ease,
+            visibility 0.35s ease;
+    }
+
+
+    /* -----------------------------------------------------
+       OPEN MENU
+       ----------------------------------------------------- */
+
+    .nav_bar.show {
+        transform: translateY(0);
+
+        opacity: 1;
+
+        visibility: visible;
+    }
+
+
+    /* -----------------------------------------------------
+       MOBILE NAV LINKS
+       ----------------------------------------------------- */
+
+    .nav_bar a {
+
+        /*
+           Do NOT let the old margin affect spacing
+        */
+        margin: 0 !important;
+
+        /*
+           Give every menu item enough space
+        */
+        padding: 10px 20px !important;
+
+        /*
+           Same clickable width
+        */
+        width: 150px !important;
+
+        min-width: 150px !important;
+
+        height: 42px !important;
+
+        box-sizing: border-box;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        /*
+           Prevent old hover width changes
+        */
+        max-width: 150px !important;
+
+        transition:
+            color 0.3s ease,
+            background-color 0.3s ease;
+    }
+
+
+    /* -----------------------------------------------------
+       HOVER EFFECT
+       ----------------------------------------------------- */
+
+    /*
+       Keep space between the text and underline.
+    */
+
+    .nav_bar #home:hover,
+    .nav_bar #about:hover,
+    .nav_bar #projects:hover,
+    .nav_bar #contact:hover {
+
+        /*
+           Keep the same size while hovering
+        */
+        width: 150px !important;
+
+        min-width: 150px !important;
+
+        height: 42px !important;
+
+        /*
+           Keep your original color
+        */
+        color: rgb(41, 79, 135);
+
+        /*
+           Keep your original hover border
+        */
+        border-bottom: 4px solid rgb(41, 79, 135);
+
+        border-radius: 15px;
+
+        /*
+           Add space between menu items
+        */
+        margin: 0 !important;
+    }
+
+
+    /* -----------------------------------------------------
+       ACTIVE PROJECT LINK
+       ----------------------------------------------------- */
+
+    .nav_bar #projects {
+
+        width: 150px !important;
+
+        min-width: 150px !important;
+
+        height: 42px !important;
+
+        box-sizing: border-box;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+
+    .nav_bar {
+
+        top: 65px;
+
+        width: 100% !important;
+
+        padding: 18px 15px 22px !important;
+
+        /*
+           Slightly smaller gap
+        */
+        gap: 10px !important;
+    }
+
+
+    .nav_bar a {
+
+        width: 145px !important;
+
+        min-width: 145px !important;
+
+        max-width: 145px !important;
+
+        height: 42px !important;
+
+        padding: 9px 15px !important;
+
+        margin: 0 !important;
+
+        font-size: 16px;
+    }
+
+
+    .nav_bar #home:hover,
+    .nav_bar #about:hover,
+    .nav_bar #projects:hover,
+    .nav_bar #contact:hover {
+
+        width: 145px !important;
+
+        min-width: 145px !important;
+
+        height: 42px !important;
+
+        margin: 0 !important;
+    }
+
+
+    .nav_bar #projects {
+
+        width: 145px !important;
+
+        min-width: 145px !important;
+
+        height: 42px !important;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media screen and (max-width: 360px) {
+
+    .nav_bar {
+
+        top: 60px;
+
+        padding: 15px 10px 20px !important;
+
+        gap: 8px !important;
+    }
+
+
+    .nav_bar a {
+
+        width: 135px !important;
+
+        min-width: 135px !important;
+
+        max-width: 135px !important;
+
+        height: 40px !important;
+
+        padding: 8px 12px !important;
+
+        font-size: 15px;
+    }
+
+
+    .nav_bar #home:hover,
+    .nav_bar #about:hover,
+    .nav_bar #projects:hover,
+    .nav_bar #contact:hover {
+
+        width: 135px !important;
+
+        min-width: 135px !important;
+
+        height: 40px !important;
+    }
+
+
+    .nav_bar #projects {
+
+        width: 135px !important;
+
+        min-width: 135px !important;
+
+        height: 40px !important;
+    }
+}
+/* =========================================
+   NAVBAR LINKS - ALL RESPONSIVE SCREENS
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .nav_bar a {
+        width: 145px !important;
+        min-width: 145px !important;
+        max-width: 145px !important;
+
+        height: 56px !important;
+
+        padding: 9px 15px !important;
+        margin: 2px !important;
+
+        font-size: 20px !important;
+
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* =========================================
+   SMALL TABLETS / LARGE PHONES
+   ========================================= */
+
+@media screen and (max-width: 600px) {
+
+    .nav_bar a {
+        width: 145px !important;
+        min-width: 145px !important;
+        max-width: 145px !important;
+
+        height: 56px !important;
+
+        padding: 9px 15px !important;
+        margin: 2px !important;
+
+        font-size: 20px !important;
+
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* =========================================
+   PHONES
+   ========================================= */
+
+@media screen and (max-width: 480px) {
+
+    .nav_bar a {
+        width: 145px !important;
+        min-width: 145px !important;
+        max-width: 145px !important;
+
+        height: 56px !important;
+
+        padding: 9px 15px !important;
+        margin: 2px !important;
+
+        font-size: 20px !important;
+
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media screen and (max-width: 380px) {
+
+    .nav_bar a {
+        width: 145px !important;
+        min-width: 145px !important;
+        max-width: 145px !important;
+
+        height: 56px !important;
+
+        padding: 9px 15px !important;
+        margin: 2px !important;
+
+        font-size: 20px !important;
+
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* =========================================
+   VERY SMALL PHONES
+   ========================================= */
+
+@media screen and (max-width: 360px) {
+
+    .nav_bar a {
+        width: 145px !important;
+        min-width: 145px !important;
+        max-width: 145px !important;
+
+        height: 56px !important;
+
+        padding: 9px 15px !important;
+        margin: 2px !important;
+
+        font-size: 20px !important;
+
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dipan's Contact</title>
     <link rel="stylesheet" href="css/contact.css">
 </head>
@@ -14,7 +16,19 @@
 <a href="index.html"> <img class="logo" src="images/dipan white.png" alt="logo"> </a>
 </div>
   
-<nav class="nav_bar">
+  <!-- MOBILE MENU BUTTON -->
+
+    <button
+        class="menu_btn"
+        id="menuBtn"
+        aria-label="Open Menu"
+        aria-expanded="false">
+
+        <i class="fa-solid fa-bars-staggered"></i>
+
+    </button>
+
+<nav class="nav_bar" id="navBar">
  
     <a id="home" href="index.html">Home</a>
     <a id="about" href="about.html">About</a>
@@ -73,7 +87,7 @@
 
     
 
-</main><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</main>
 
 
 
@@ -135,13 +149,7 @@ location_on</span> -->
 
 
   <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
- <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['<i>Lumbini ICT</i> Campus',' Second Semester'],
-      typeSpeed: 100,
-    });
-  </script>
+  <script src="js/contact.js"></script>
  <script src="https://kit.fontawesome.com/041e9d6e9a.js" crossorigin="anonymous"></script>
 
 </body>

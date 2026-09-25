@@ -27,13 +27,7 @@ header{
 
 
 .nav_bar{
-    /* font-size: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    min-width: 600px;*/
-
-
+ 
     font-size: 20px;
     display: flex;
     flex: 2;
@@ -198,6 +192,9 @@ main .box1:hover{
 
 }
 
+main {
+    padding-bottom: 350px;
+}
 
 main .content{
     margin-left: 50px ;
@@ -285,21 +282,6 @@ main .call1 h3, main .add1 h3, main .emailus1 h3{
     color:  rgb(41, 79, 135);
     font-weight: 950;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Footer Part */
@@ -394,5 +376,1057 @@ footer .footer_container .cloumn1 a:hover, footer .footer_container .cloumn2 a:h
     display: flex;
     gap: 10px;
     align-items: center;
+
+}
+
+
+/* =========================================================
+   RESPONSIVE OVERRIDE
+   IMPORTANT:
+   DO NOT CHANGE OR DELETE THE OLD CSS ABOVE.
+   PASTE THIS CODE AT THE VERY BOTTOM OF contact.css
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESPONSIVE FIX
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HEADER - FULL WIDTH
+   ========================================================= */
+
+header {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+main {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+
+
+/* =========================================================
+   CONTACT BOX
+   .content WILL STAY INSIDE .box1
+   ========================================================= */
+
+main .box1 {
+    float: none;
+
+    width: 100%;
+    max-width: 650px;
+
+    height: auto;
+    min-height: 350px;
+
+    box-sizing: border-box;
+
+    margin: 0 auto;
+
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    transition: 0.5s;
+}
+
+
+/* Keep hover from making the box overflow */
+
+main .box1:hover {
+    width: 100%;
+    max-width: 650px;
+
+    height: auto;
+    min-height: 370px;
+}
+
+
+/* =========================================================
+   CONTENT INSIDE BOX1
+   ========================================================= */
+
+main .box1 .content {
+    width: 100%;
+    max-width: 520px;
+
+    margin-left: 0;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   CONTACT INFORMATION ROWS
+   ========================================================= */
+
+main .box1 .m-add,
+main .box1 .m-call,
+main .box1 .m-emailus {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    box-sizing: border-box;
+
+    margin-bottom: 25px;
+}
+
+
+/* Last item */
+
+main .box1 .m-emailus {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   ICON CIRCLES
+   ========================================================= */
+
+main .box1 .box1-2,
+main .box1 .box1-3,
+main .box1 .box1-4 {
+    width: 36px;
+    min-width: 36px;
+
+    height: 36px;
+
+    padding-left: 0;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CONTACT TEXT
+   ========================================================= */
+
+main .box1 .add1,
+main .box1 .call1,
+main .box1 .emailus1 {
+    min-width: 0;
+
+    flex: 1;
+
+    box-sizing: border-box;
+}
+
+
+main .box1 .add1 h3,
+main .box1 .call1 h3,
+main .box1 .emailus1 h3 {
+    margin-bottom: 5px;
+
+    font-size: 18px;
+}
+
+
+main .box1 .add1 p,
+main .box1 .call1 p,
+main .box1 .emailus1 p {
+    margin: 0;
+
+    max-width: 100%;
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   FOOTER - FULL WIDTH
+   ========================================================= */
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 0;
+}
+
+
+.footer_container {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    margin: 20px 0;
+
+    padding: 0 20px;
+
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    gap: 30px;
+}
+
+
+footer .copyright {
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media screen and (max-width: 1100px) {
+
+    main {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+
+    main .box1 {
+        max-width: 620px;
+
+        padding: 35px;
+    }
+
+
+    main .box1:hover {
+        max-width: 620px;
+    }
+
+
+    main .box1 .content {
+        max-width: 500px;
+    }
+
+
+    .footer_container {
+        justify-content: space-between;
+
+        gap: 25px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE - 768px
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* ---------- HEADER ---------- */
+
+    header {
+        width: 100%;
+        height: 70px;
+
+        box-sizing: border-box;
+
+        position: relative;
+    }
+
+
+    .logo_container {
+        margin-left: 10px;
+    }
+
+
+    .logo {
+        width: 130px;
+        height: auto;
+    }
+
+
+    /* ---------- MOBILE MENU ---------- */
+
+    .menu_btn {
+        display: block;
+
+        background: transparent;
+
+        border: none;
+
+        color: rgb(210, 205, 205);
+
+        font-size: 25px;
+
+        cursor: pointer;
+
+        padding: 10px;
+
+        margin-right: 10px;
+
+        z-index: 1001;
+    }
+
+
+    .nav_bar {
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        min-width: 0;
+
+        margin: 0;
+
+        padding: 15px 20px 20px;
+
+        box-sizing: border-box;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: flex-start;
+
+        align-items: center;
+
+        gap: 5px;
+
+        background-color: #0a1325;
+
+        transform: translateY(-120%);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transition:
+            transform 0.35s ease,
+            opacity 0.35s ease,
+            visibility 0.35s ease;
+
+        z-index: 1000;
+    }
+
+
+    .nav_bar.show {
+
+        transform: translateY(0);
+
+        opacity: 1;
+
+        visibility: visible;
+    }
+
+
+    .nav_bar a {
+
+        margin: 5px;
+
+        padding: 8px;
+
+        text-align: center;
+    }
+
+
+    /* ---------- MAIN ---------- */
+
+    main {
+
+        width: 100%;
+
+        margin: 0;
+
+        padding: 60px 6% 180px;
+
+        box-sizing: border-box;
+    }
+
+
+    main h1 {
+
+        font-size: clamp(32px, 8vw, 45px);
+
+        text-align: center;
+
+        margin-top: 15px;
+    }
+
+
+    /* ---------- UNDERLINE ---------- */
+
+    main .ul1 {
+
+        position: relative;
+
+        left: auto;
+        right: auto;
+        bottom: auto;
+
+        margin: 0 auto 40px;
+
+        width: 50px;
+    }
+
+
+    /* =====================================================
+       CONTACT BOX
+       ===================================================== */
+
+    main .box1 {
+
+        float: none;
+
+        width: 100%;
+        max-width: 600px;
+
+        min-height: 350px;
+
+        height: auto;
+
+        margin: 0 auto;
+
+        padding: 35px 30px;
+
+        box-sizing: border-box;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+
+    main .box1:hover {
+
+        width: 100%;
+        max-width: 600px;
+
+        min-height: 350px;
+
+        height: auto;
+    }
+
+
+    /* ---------- CONTENT ---------- */
+
+    main .box1 .content {
+
+        width: 100%;
+        max-width: 500px;
+
+        margin: 0;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: stretch;
+    }
+
+
+    /* ---------- CONTACT ROWS ---------- */
+
+    main .box1 .m-add,
+    main .box1 .m-call,
+    main .box1 .m-emailus {
+
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+        gap: 18px;
+
+        margin-bottom: 25px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ---------- ICON ---------- */
+
+    main .box1 .box1-2,
+    main .box1 .box1-3,
+    main .box1 .box1-4 {
+
+        width: 38px;
+        min-width: 38px;
+
+        height: 38px;
+
+        padding: 0;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* ---------- TEXT ---------- */
+
+    main .box1 .add1,
+    main .box1 .call1,
+    main .box1 .emailus1 {
+
+        flex: 1;
+
+        min-width: 0;
+    }
+
+
+    main .box1 .add1 h3,
+    main .box1 .call1 h3,
+    main .box1 .emailus1 h3 {
+
+        font-size: 17px;
+
+        margin-bottom: 4px;
+    }
+
+
+    main .box1 .add1 p,
+    main .box1 .call1 p,
+    main .box1 .emailus1 p {
+
+        font-size: 15px;
+
+        line-height: 1.5;
+
+        overflow-wrap: anywhere;
+
+        word-break: break-word;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+
+        width: 100%;
+
+        padding: 15px 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    .footer_container {
+
+        width: 100%;
+
+        margin: 15px 0;
+
+        padding: 0 15px;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: space-between;
+
+        gap: 35px;
+
+        box-sizing: border-box;
+    }
+
+
+    footer .footer_container .cloumn1,
+    footer .footer_container .cloumn2 {
+
+        flex: 1;
+
+        min-width: 200px;
+    }
+
+
+    footer .footer_container .cloumn3 {
+
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    footer .copyright {
+
+        margin: 20px 10px 5px;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        text-align: center;
+
+        gap: 10px;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE - 480px
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+
+    /* ---------- HEADER ---------- */
+
+    header {
+
+        width: 100%;
+
+        height: 65px;
+    }
+
+
+    .logo {
+
+        width: 115px;
+    }
+
+
+    .menu_btn {
+
+        font-size: 23px;
+
+        margin-right: 5px;
+    }
+
+
+    .nav_bar {
+
+        top: 65px;
+
+        padding: 10px 15px 15px;
+    }
+
+
+    /* ---------- MAIN ---------- */
+
+    main {
+
+        width: 100%;
+
+        padding: 45px 5% 150px;
+
+        box-sizing: border-box;
+    }
+
+
+    main h1 {
+
+        font-size: 32px;
+
+        letter-spacing: 2px;
+    }
+
+
+    main .ul1 {
+
+        margin-bottom: 30px;
+    }
+
+
+    /* =====================================================
+       CONTACT BOX
+       ===================================================== */
+
+    main .box1 {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        min-height: 330px;
+
+        padding: 30px 20px;
+
+        margin: 0 auto;
+
+        border-radius: 25px;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+
+    main .box1:hover {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        min-height: 330px;
+
+        height: auto;
+    }
+
+
+    /* ---------- CONTENT ---------- */
+
+    main .box1 .content {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0;
+
+        box-sizing: border-box;
+    }
+
+
+    /* ---------- CONTACT ROWS ---------- */
+
+    main .box1 .m-add,
+    main .box1 .m-call,
+    main .box1 .m-emailus {
+
+        width: 100%;
+
+        gap: 12px;
+
+        margin-bottom: 22px;
+
+        align-items: center;
+    }
+
+
+    /* ---------- ICON ---------- */
+
+    main .box1 .box1-2,
+    main .box1 .box1-3,
+    main .box1 .box1-4 {
+
+        width: 38px;
+
+        min-width: 38px;
+
+        height: 38px;
+
+        padding: 0;
+    }
+
+
+    /* ---------- TEXT ---------- */
+
+    main .box1 .add1,
+    main .box1 .call1,
+    main .box1 .emailus1 {
+
+        min-width: 0;
+
+        flex: 1;
+    }
+
+
+    main .box1 .add1 h3,
+    main .box1 .call1 h3,
+    main .box1 .emailus1 h3 {
+
+        font-size: 16px;
+    }
+
+
+    main .box1 .add1 p,
+    main .box1 .call1 p,
+    main .box1 .emailus1 p {
+
+        font-size: 14px;
+
+        line-height: 1.5;
+
+        overflow-wrap: anywhere;
+
+        word-break: break-word;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+
+        width: 100%;
+
+        padding: 15px 10px;
+    }
+
+
+    .footer_container {
+
+        width: 100%;
+
+        margin: 15px 0;
+
+        padding: 0 10px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 30px;
+    }
+
+
+    footer .footer_container .cloumn1,
+    footer .footer_container .cloumn2,
+    footer .footer_container .cloumn3 {
+
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    .contant {
+
+        align-items: flex-start;
+
+        gap: 8px;
+
+        word-break: break-word;
+    }
+
+
+    .contant span {
+
+        min-width: 0;
+
+        overflow-wrap: anywhere;
+
+        word-break: break-word;
+    }
+
+
+    footer .copyright {
+
+        margin: 20px 5px 5px;
+
+        font-size: 13px;
+
+        text-align: center;
+
+        line-height: 1.5;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE - 360px
+   ========================================================= */
+
+@media screen and (max-width: 360px) {
+
+    header {
+
+        width: 100%;
+
+        height: 60px;
+    }
+
+
+    .logo {
+
+        width: 105px;
+    }
+
+
+    .menu_btn {
+
+        font-size: 21px;
+
+        margin-right: 2px;
+
+        padding: 8px;
+    }
+
+
+    .nav_bar {
+
+        top: 60px;
+    }
+
+
+    /* ---------- MAIN ---------- */
+
+    main {
+
+        padding-left: 4%;
+
+        padding-right: 4%;
+    }
+
+
+    main h1 {
+
+        font-size: 28px;
+
+        letter-spacing: 1px;
+    }
+
+
+    /* ---------- CONTACT BOX ---------- */
+
+    main .box1 {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        min-height: 320px;
+
+        padding: 25px 15px;
+
+        border-radius: 22px;
+
+        box-sizing: border-box;
+    }
+
+
+    main .box1:hover {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        min-height: 320px;
+    }
+
+
+    /* ---------- CONTENT ---------- */
+
+    main .box1 .content {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 0;
+    }
+
+
+    /* ---------- ROWS ---------- */
+
+    main .box1 .m-add,
+    main .box1 .m-call,
+    main .box1 .m-emailus {
+
+        gap: 10px;
+
+        margin-bottom: 20px;
+
+        width: 100%;
+    }
+
+
+    /* ---------- ICON ---------- */
+
+    main .box1 .box1-2,
+    main .box1 .box1-3,
+    main .box1 .box1-4 {
+
+        width: 34px;
+
+        min-width: 34px;
+
+        height: 34px;
+
+        padding: 0;
+    }
+
+
+    /* ---------- TEXT ---------- */
+
+    main .box1 .add1 h3,
+    main .box1 .call1 h3,
+    main .box1 .emailus1 h3 {
+
+        font-size: 15px;
+    }
+
+
+    main .box1 .add1 p,
+    main .box1 .call1 p,
+    main .box1 .emailus1 p {
+
+        font-size: 12px;
+
+        line-height: 1.5;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer_container {
+
+        margin: 10px 0;
+
+        padding: 0 5px;
+
+        gap: 25px;
+    }
+
+
+    footer .copyright {
+
+        font-size: 12px;
+
+        margin-left: 5px;
+
+        margin-right: 5px;
+    }
 
 }
