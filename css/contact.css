@@ -1451,3 +1451,18 @@ footer .copyright {
     }
 
 }
+/* =========================================================
+   FINAL MENU BUTTON FIX
+   DESKTOP = HIDDEN
+   RESPONSIVE = VISIBLE
+   ========================================================= */
+
+.menu_btn {
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .menu_btn {
+        display: block !important;
+    }
+}
