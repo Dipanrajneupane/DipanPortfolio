@@ -1430,3 +1430,24 @@ footer .copyright {
     }
 
 }
+/* =========================================================
+   MENU BUTTON - HIDDEN ON DESKTOP
+   SHOW ONLY ON RESPONSIVE SCREENS
+   ========================================================= */
+
+.menu_btn {
+    display: none;
+}
+
+
+/* =========================================================
+   SHOW MENU BUTTON ON RESPONSIVE
+   ========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    .menu_btn {
+        display: block;
+    }
+
+}
